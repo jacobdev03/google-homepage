@@ -3,11 +3,12 @@
     <head>
         
         <style>
-            .google-logo-container {
+            .google-container {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 100vh;
+                height: 60vh;
+                flex-direction: column;
                 
                 
 
@@ -21,15 +22,60 @@
                 
                 
             }
+
+            #search-text {
+                text-align: 50px;
+                margin-top: 50px;
+                width: 420px;
+                height: 45px;
+                border-radius: 30px;
+                border: 1px solid #E8E8E8;
+                padding: 0px 50px;
+                font-size: 16px;
+
+            }
             
 
-            
+            #icon-search {
+                color: #9aa0a6;
+                width: 1px;
+                height: 1px;
+                position: absolute;
+                padding: 65px 0px 0px 20px;
+                text-decoration: none;
+                
+                
+            }
+
+            #search-text:hover {
+                box-shadow: 0px 0px 5px #d0d0d0;
+
+            }
+
+            #keyboard {
+                position: absolute;
+                right: 250px;
+                padding: 65px 0px 0px 100px;
+                margin-left: 50px;
+                cursor: pointer;
+                
+            }
 
         </style>
+
+<script src="https://kit.fontawesome.com/9f17aa6830.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
-        <div class="google-logo-container">
+        
+        <div class="google-container">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google-logo">
+            <form>
+                <i class="fas fa-search" id="icon-search"></i>
+                <i class="far fa-keyboard" id="keyboard"></i>
+                <input type="text" id="search-text" name="search">
+                
+            </form>
             
             
         </div>
