@@ -25,7 +25,7 @@
 
             #search-text {
                 text-align: 50px;
-                margin-top: 50px;
+                margin-top: 25px;
                 width: 420px;
                 height: 45px;
                 border-radius: 30px;
@@ -41,7 +41,7 @@
                 width: 1px;
                 height: 1px;
                 position: absolute;
-                padding: 65px 0px 0px 20px;
+                padding: 40px 0px 0px 20px;
                 text-decoration: none;
                 
                 
@@ -54,11 +54,30 @@
 
             #keyboard {
                 position: absolute;
-                right: 250px;
-                padding: 65px 0px 0px 100px;
-                margin-left: 50px;
+                padding: 40px 0px 0px 0px;
+                margin-left: 480px;
                 cursor: pointer;
+                color: #6d6d6d;
                 
+            }
+
+            .google-button {
+                background-color: #f8f9fa;
+                border: 0px solid #dadce0;
+                border-radius: 4px;
+                height: auto;
+                font-size: 14px;
+                font-family: Arial;
+                height: 36px;
+                padding: 0px 16px;
+                color: #202124;
+                margin: 30px 5px;
+                cursor: pointer;
+            }
+
+            .google-button:hover {
+                border: 1px solid #dadce0;
+
             }
 
         </style>
@@ -74,7 +93,11 @@
                 <i class="fas fa-search" id="icon-search"></i>
                 <i class="far fa-keyboard" id="keyboard"></i>
                 <input type="text" id="search-text" name="search">
-                
+ 
+            </form>
+            <form class="buttons">
+            <input type="submit" class="google-button" value="Google Search">
+            <input type="submit" class="google-button" value="I'm Feeling Lucky">
             </form>
             
             
