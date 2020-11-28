@@ -3,6 +3,7 @@
     <head>
         
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
             .google-container {
                 display: flex;
                 justify-content: center;
@@ -80,12 +81,61 @@
 
             }
 
+            .navbar {
+
+                margin: 10px;
+                margin-left: auto;
+                text-align: right;
+                
+            }
+
+            .navbar a {
+                
+                margin: 0px 10px;
+                text-decoration: none;
+                color:#5f6368;
+                font-family: arial;
+                font-size: 14px;
+                height: 40vh;
+                top: 0;
+                
+            }
+
+            #signin {
+                font-size: 15px;
+                background-color: #4285F4;
+                font-family: Roboto;
+                color: white;
+                padding: 7px 10px;
+                border: 1px solid white;
+                border-radius: 4px;
+                font-weight: 700;
+
+            }
+
+            
+            
+
         </style>
 
 <script src="https://kit.fontawesome.com/9f17aa6830.js" crossorigin="anonymous"></script>
 
     </head>
     <body>
+        <div id="flexwrap">
+        <div class="navbar-container">
+            <nav class="navbar">
+                <a href="">Gmail</a>
+                <a href="">Images</a>
+                <a href="https://github.com/jacobdev03" target="__blank">
+                    <input id="signin" type="submit" name="signin" value="Sign in">
+
+                </a>
+                
+
+
+            </nav>
+        </div>
         
         <div class="google-container">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google-logo">
@@ -102,6 +152,7 @@
             
             
         </div>
+    </div>
              
         
             
